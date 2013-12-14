@@ -85,7 +85,7 @@ class Example(Activity):
         # Show all components (otherwise none will be displayed)
         self.show_all()
 
-    def greeter(self, button, entry, output):
+    def greeter(self, button, entry, entry2, output):
         if len(entry.get_text()) > 0:
             output.set_text("WEATHER TODAY IS: \n" + entry.get_text() + "\n" + entry2.get_text())
         else:
