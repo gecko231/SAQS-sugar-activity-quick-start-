@@ -1,6 +1,6 @@
 [Activity]
-name = example
-bundle_id = example.laptop.org
+name = weatherstation
+bundle_id = MyWeatherStation.laptop.org
 icon = SunGuy
 exec = sugar-activity activity.Example
 show_launcher = yes
