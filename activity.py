@@ -64,23 +64,23 @@ class Example(Activity):
         entry2.connect('key-release-event', self.emptyout, output)
 
         # Add buttons
-        sunnyButton = Gtk.Button(label=_("<sunny>"))
+        sunnyButton = Gtk.Button(label=_("Sunny"))
         grid.attach(sunnyButton, 0, 3, 1, 1)
         
-        buttyButton = Gtk.Button(label=_("<butty>"))
-        grid.attach(buttyButton, 1, 3, 1, 1)
+        cloudyButton = Gtk.Button(label=_("Cloudy"))
+        grid.attach(cloudyButton, 1, 3, 1, 1)
 
-        rainyButton = Gtk.Button(label=_("<rainy>"))
+        rainyButton = Gtk.Button(label=_("Rainy"))
         grid.attach(rainyButton, 2, 3, 1, 1)
 
-        snowyButton = Gtk.Button(label=_("<snowy>"))
+        snowyButton = Gtk.Button(label=_("Snowy"))
         grid.attach(snowyButton, 3, 3, 1, 1)
 
         # Tell the buttons to run a class method
         sunnyButton.connect('clicked', self.showWeather, "Sunny", entry, entry2, output)
-        buttyButton.connect('clicked', self.showWeather, "Butty", output)
-        rainyButton.connect('clicked', self.showWeather, "Rainy", output)
-        snowyButton.connect('clicked', self.showWeather, "Snowy", output)
+        cloudyButton.connect('clicked', self.showWeather, "Cloudy", entry, entry2, output)
+        rainyButton.connect('clicked', self.showWeather, "Rainy", entry, entry2, output)
+        snowyButton.connect('clicked', self.showWeather, "Snowy", entry, entry2, output)
 
         # Show all components (otherwise none will be displayed)
         self.show_all()
